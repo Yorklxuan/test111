@@ -1,0 +1,199 @@
+*{
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-family: "微软雅黑";
+  outline: none;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-pagination-bullet{
+
+}
+
+.swiper-pagination-bullet-active{
+  background: white;
+}
+
+nav{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.container{
+	position: relative;
+}
+
+.radbox{
+  position: absolute;
+  top: 10px;
+  right: 70px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  background: none;
+  border: 2px solid white;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.logo{
+	font-size: 40px;
+}
+
+.search{
+  left: 350px;
+  width: 300px;
+}
+
+.search-text{
+  padding: 0 32px 0 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  background: none;
+  border: none;
+}
+
+.search-logo{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin: -20px 0 0 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.ft-btn{
+  left: 680px;
+}
+
+.ft-btn .glyphicon{
+  margin: 8px;
+  font-size: 18px;
+}
+
+#userbtn{
+  right: 15px;
+}
+
+svg {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin: -29px -26px 0 0;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+path {
+  fill: none;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  stroke-width: 40px;
+  stroke-linecap: round;
+  stroke: white;
+  stroke-dashoffset: 0px;
+}
+path#top,
+path#bottom {
+  stroke-dasharray: 240px 950px;
+}
+path#middle {
+  stroke-dasharray: 240px 240px;
+}
+.cross path#top,
+.cross path#bottom {
+  stroke-dashoffset: -650px;
+  stroke-dashoffset: -650px;
+}
+.cross path#middle {
+  stroke-dashoffset: -115px;
+  stroke-dasharray: 1px 220px;
+}
+
+.head{
+  position: relative;
+}
+
+.head .radbox{
+  z-index: 99;
+  top: unset;
+  bottom: 20px;
+}
+
+.head .radbox .glyphicon{
+  margin: 7px;
+  font-size: 20px;
+}
+
+.link{
+  right: 200px;
+}
+
+.picprev{
+  right: 150px;
+}
+
+.picnext{
+  right: 100px;
+}
+
+.more{
+  right: 50px;
+}
+
+.bg1{
+  background-image: url(../img/bg1.jpg);
+}
+
+.bg2{
+  background-image: url(../img/bg2.jpg);
+}
+
+.bg3{
+  background-image: url(../img/bg3.jpg);
+}
+
+.body{
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main{
+  height: 1000px;
+  background: #dddddd;
+}
+
+.foot{
+  height: 500px;
+  background: black;
+}

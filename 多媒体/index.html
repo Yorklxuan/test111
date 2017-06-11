@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+	<body>
+		<nav>
+			<div class="container">
+				<div class="logo">
+					野径
+				</div>
+				<div class="radbox search">
+					<input class="search-text" type="text"></input>
+					<span class="search-logo glyphicon glyphicon-search"></span>
+				</div>
+				<div class="radbox ft-btn">
+					<span class="glyphicon glyphicon-plus"></span>
+				</div>
+				<div class="radbox">
+					
+				</div>
+				<div id="userbtn" class="radbox">
+				  <svg viewBox="0 0 800 600">
+				    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+				    <path d="M300,320 L540,320" id="middle"></path>
+				    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+				  </svg>
+				 </div>
+			</div>
+		</nav>
+		<div class="swiper-container swiper-container-a">
+			<div class="swiper-wrapper">
+		        <div class="swiper-slide">
+					<div class="head swiper-container swiper-container-b">
+					    <div class="swiper-wrapper">
+					        <div class="bg1 swiper-slide">
+					        	
+					        </div>
+					        <div class="bg2 swiper-slide">
+					        	
+					        </div>
+					        <div class="bg3 swiper-slide">
+					        	
+					        </div>
+					    </div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>
+					    
+					    <!-- 如果需要导航按钮 -->
+					    <div class="radbox link">
+					    	<span class="glyphicon glyphicon-link"></span>
+					    </div>
+					    <div class="radbox picprev">
+					    	<span class="glyphicon glyphicon-chevron-left"></span>
+					    </div>
+					    <div class="radbox picnext">
+					    	<span class="glyphicon glyphicon-chevron-right"></span>
+					    </div>
+					    <div class="radbox more">
+					    	<span class="glyphicon glyphicon-adjust"></span>
+					    </div>
+					</div>
+		        </div>
+		        <div class="swiper-slide">
+					<div class="swiper-container swiper-container-c">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide body">
+								<div class="main">
+									
+								</div>
+								<div class="foot">
+									
+								</div>
+					        </div>
+					    </div>
+				        <!-- Add Scroll Bar -->
+				        <div class="swiper-scrollbar"></div>
+					</div>
+		        </div>
+			</div>
+		</div>
+  	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+    	(function() {
+			  var i;
+
+			  $("#userbtn").click(function() {
+			    clearInterval(i);
+			    return $("#userbtn").toggleClass("cross");
+			  });
+
+			}).call(this);
+    </script>
+    <script>
+	    var swiperA = new Swiper('.swiper-container-a', {
+	        paginationClickable: true,
+        	direction: 'vertical',
+	        slidesPerView: 1,
+        	mousewheelControl: true,
+	    });
+	    var swiperB = new Swiper('.swiper-container-b', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true,
+	        nextButton: '.picnext',
+	        prevButton: '.picprev',
+	        spaceBetween: 30,
+	        effect: 'fade',
+        	loop: true,
+	        centeredSlides: true,
+	        autoplay: 5000,
+	        autoplayDisableOnInteraction: false,
+	    }); 
+	    var swiperC = new Swiper('.swiper-container-c', {
+	        scrollbar: '.swiper-scrollbar',
+	        direction: 'vertical',
+	        slidesPerView: 'auto',
+	        mousewheelControl: true,
+	        freeMode: true,
+	    });      
+	</script>
+  </body>
+</html>
